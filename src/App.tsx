@@ -2,11 +2,15 @@ import React from "react";
 import "./App.css";
 
 let name: string;
-let age: number;
+//union
+let age: number | string;
 let isStudent: boolean;
 let hobbies: string[]; //array of strings
 let role: [number, string]; //tuple
-//object
+
+age = "thirty five";
+
+object;
 type Person = {
   name: string;
   age?: number;
@@ -16,7 +20,7 @@ let person: Person = {
   age: 32,
 };
 
-let lotsOFPeople: Person[];
+let lotsOfPeople: Person[];
 
 function App() {
   return <div className="App">Hello World</div>;
