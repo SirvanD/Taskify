@@ -9,12 +9,14 @@ let role: [number, string]; //tuple
 //object
 type Person = {
   name: string;
-  age: number;
+  age?: number;
 };
 let person: Person = {
   name: "ET",
   age: 32,
 };
+
+let lotsOFPeople: Person[];
 
 function App() {
   return <div className="App">Hello World</div>;
