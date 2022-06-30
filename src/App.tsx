@@ -10,6 +10,8 @@ let role: [number, string]; //tuple
 
 age = "thirty five";
 
+let printAge: (name: string) => void;
+
 function printName(name: string) {
   console.log(name);
 }
