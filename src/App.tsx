@@ -10,7 +10,7 @@ let role: [number, string]; //tuple
 
 age = "thirty five";
 
-let printAge: (name: string) => void;
+let printAge: (name: string) => void; //or never
 
 function printName(name: string) {
   console.log(name);
@@ -27,6 +27,13 @@ printName("Sirvan");
 //   name: "ET",
 //   age: 32,
 // };
+
+//interface
+
+interface Person {
+  name: string;
+  age?: number;
+}
 
 // let lotsOfPeople: Person[];
 
