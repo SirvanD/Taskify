@@ -23,8 +23,8 @@ const TodoList = ({
         {(provided) => (
           <div
             className="todos"
-            ref={provided.innerRef}
             {...provided.droppableProps}
+            ref={provided.innerRef}
           >
             <span className="todos__heading">Active Tasks</span>
 
@@ -37,6 +37,7 @@ const TodoList = ({
                 setTodos={setTodos}
               />
             ))}
+            {provided.placeholder}
           </div>
         )}
       </Droppable>
@@ -50,7 +51,7 @@ const TodoList = ({
           >
             <span className="todos__heading">Completed Tasks</span>
 
-            {todos.map((todo, index) => (
+            {completedTodos.map((todo, index) => (
               <SingleTodo
                 index={index}
                 todo={todo}
@@ -59,6 +60,7 @@ const TodoList = ({
                 setTodos={setCompletedTodos}
               />
             ))}
+            {provided.placeholder}
           </div>
         )}
       </Droppable>

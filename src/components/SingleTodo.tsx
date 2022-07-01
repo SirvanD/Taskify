@@ -50,7 +50,7 @@ const SingleTodo = ({ index, todo, todos, setTodos }: Props) => {
           className="todos__single"
           onSubmit={(e) => handleEdit(e, todo.id)}
           {...provided.draggableProps}
-          {...provided.draggableProps}
+          {...provided.dragHandleProps}
           ref={provided.innerRef}
         >
           {edit ? (
