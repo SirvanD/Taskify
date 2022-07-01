@@ -20,9 +20,9 @@ const TodoList = ({
   return (
     <div className="container">
       <Droppable droppableId="TodosList">
-        {(provided) => (
+        {(provided, snapshot) => (
           <div
-            className="todos"
+            className={`todos ${snapshot.isDraggingOver ? "dragActive" : ""}`}
             {...provided.droppableProps}
             ref={provided.innerRef}
           >
@@ -43,9 +43,11 @@ const TodoList = ({
       </Droppable>
 
       <Droppable droppableId="TodosRemove">
-        {(provided) => (
+        {(provided, snapshot) => (
           <div
-            className="todos remove"
+            className={`todos remove ${
+              snapshot.isDraggingOver ? "dragComplete" : ""
+            }`}
             ref={provided.innerRef}
             {...provided.droppableProps}
           >
