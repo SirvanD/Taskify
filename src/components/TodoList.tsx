@@ -11,7 +11,12 @@ interface Props {
   setCompletedTodos: React.Dispatch<React.SetStateAction<Todo[]>>;
 }
 
-const TodoList = ({ todos, setTodos }: Props) => {
+const TodoList = ({
+  todos,
+  setTodos,
+  completedTodos,
+  setCompletedTodos,
+}: Props) => {
   return (
     <div className="container">
       <Droppable droppableId="TodosList">
@@ -23,8 +28,9 @@ const TodoList = ({ todos, setTodos }: Props) => {
           >
             <span className="todos__heading">Active Tasks</span>
 
-            {todos.map((todo) => (
+            {todos.map((todo, index) => (
               <SingleTodo
+                index={index}
                 todo={todo}
                 todos={todos}
                 key={todo.id}
@@ -44,12 +50,13 @@ const TodoList = ({ todos, setTodos }: Props) => {
           >
             <span className="todos__heading">Completed Tasks</span>
 
-            {todos.map((todo) => (
+            {todos.map((todo, index) => (
               <SingleTodo
+                index={index}
                 todo={todo}
-                todos={todos}
+                todos={completedTodos}
                 key={todo.id}
-                setTodos={setTodos}
+                setTodos={setCompletedTodos}
               />
             ))}
           </div>
