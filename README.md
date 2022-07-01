@@ -2,14 +2,23 @@
 
 Demo at <a href="https://taskify-two.vercel.app/"> Here </a>
 
-### Tech Stack: React, TypeScript, react-beautiful-dnd, React-icons, deployed on Vercel
+### Tech Stack: 
+- React
+- TypeScript
+- react-beautiful-dnd
+- React-icons 
+- deployed on Vercel
+
+### Instruction: How to install and run
+
+- npm install (to install dependencies)
+- npm start (to run the project on local host)
 
 #### Current main features:
 
-- Users signUp/login/log out by either creating new account or use Google account to sign in
-- Users can lookup books in Google Books api and then Donate to our library.
-- Users can search in the local library, filtering the books shown in the sidebar.
-- Clicking on each book card (detail) will open a new modal with books details with the options of Borrow or Return depending on books availability.
+- Users can create tasks 
+- Users can edit/remove or mark tasks as done (show as striked text)
+- Users can drag and drop tasks to completed section or vice versa
 
 
 ### Application ScreenShot
