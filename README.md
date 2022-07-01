@@ -1,5 +1,7 @@
 ## Taskify - a TypeScript To Do App
 
+Simple To Do Application built with React TypeScript as my first typescript app where I could practice implementation of TS with React. Different hooks of useState, useEffect, useRef are used to build the features.
+
 Demo at <a href="https://taskify-two.vercel.app/"> Here </a>
 
 ### Tech Stack: 
