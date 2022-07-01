@@ -14,4 +14,4 @@ Demo at <a href="https://taskify-two.vercel.app/"> Here </a>
 
 ### Application ScreenShot
 
-![Screenshot](bookshelf_ss.png)
+![Screenshot](taskify2.png)
