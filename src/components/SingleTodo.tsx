@@ -1,6 +1,8 @@
 import React from "react";
 import { Todo } from "../model";
-import { AiFillEdit } from "react-icons/ai";
+import { AiFillEdit, AiFillDelete } from "react-icons/ai";
+import { MdDone } from "react-icons/md";
+import "./styles.css";
 
 type Props = {
   todo: Todo;
@@ -16,8 +18,12 @@ const SingleTodo = ({ todo, todos, setTodos }: Props) => {
         <span className="icon">
           <AiFillEdit />
         </span>
-        <span className="icon"></span>
-        <span className="icon"></span>
+        <span className="icon">
+          <AiFillDelete />
+        </span>
+        <span className="icon">
+          <MdDone />
+        </span>
       </div>
     </form>
   );
